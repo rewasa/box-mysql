@@ -15,13 +15,13 @@ mysql_connection_info = {
   :password => node['mysql']['server_root_password']
 }
 
-mysql_database node['database']['name_1'] do
+mysql_database node['db']['name_1'] do
   connection mysql_connection_info
   action :create
 end
 
 
-mysql_database node['database']['name_2'] do
+mysql_database node['db']['name_2'] do
   connection mysql_connection_info
   action :create
 end
