@@ -23,7 +23,7 @@
   "run_list": [
     "recipe[apt]",
     "recipe[mysql::server]",
-    "recipe[db:create_user]",
+    "recipe[db::create_user]",
     "recipe[db::create_database]"
   ]
 }
