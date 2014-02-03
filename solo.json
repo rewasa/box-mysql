@@ -14,15 +14,16 @@
 
     }
   },
-  "wercker-mysql" : {
-    "host": "%",
-    "username": "wercker",
-    "password": ""
+  "db" : {
+    "user": "wercker",
+    "password": "",
+    "name_1": "werckerdb1",
+    "name_2": "werckerdb2"
   },
   "run_list": [
     "recipe[apt]",
     "recipe[mysql::server]",
-    "recipe[wercker-mysql::create_wercker_user]",
-    "recipe[wercker-mysql::create_wercker_database]"
+    "recipe[db:create_user]",
+    "recipe[db::create_database]"
   ]
 }
