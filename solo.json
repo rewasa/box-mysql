@@ -18,7 +18,9 @@
     "user": "wercker",
     "password": "",
     "name_1": "werckerdb1",
-    "name_2": "werckerdb2"
+    "name_2": "werckerdb2",
+    "name_3": "werckerdb3",
+    "name_4": "werckerdb4"
   },
   "run_list": [
     "recipe[apt]",

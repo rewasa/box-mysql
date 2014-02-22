@@ -25,3 +25,13 @@ mysql_database node['db']['name_2'] do
   connection mysql_connection_info
   action :create
 end
+
+mysql_database node['db']['name_3'] do
+  connection mysql_connection_info
+  action :create
+end
+
+mysql_database node['db']['name_4'] do
+  connection mysql_connection_info
+  action :create
+end
