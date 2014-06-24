@@ -21,6 +21,8 @@
     "name_2": "werckerdb2",
     "name_3": "werckerdb3",
     "name_4": "werckerdb4"
+    "name_5": "werckerdb5"
+    "name_6": "werckerdb6"
   },
   "run_list": [
     "recipe[apt]",

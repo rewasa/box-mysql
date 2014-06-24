@@ -15,23 +15,14 @@ mysql_connection_info = {
   :password => node['mysql']['server_root_password']
 }
 
-mysql_database node['db']['name_1'] do
-  connection mysql_connection_info
-  action :create
+
+## create 6 databases
+(1..6).each do |i|
+
+  mysql_database node['db']["name_#{i}"] do
+    connection mysql_connection_info
+    action :create
+  end
+
 end
 
-
-mysql_database node['db']['name_2'] do
-  connection mysql_connection_info
-  action :create
-end
-
-mysql_database node['db']['name_3'] do
-  connection mysql_connection_info
-  action :create
-end
-
-mysql_database node['db']['name_4'] do
-  connection mysql_connection_info
-  action :create
-end

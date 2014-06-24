@@ -1,5 +1,5 @@
 name: mysql-multi-databases
-version: 0.0.4
+version: 0.0.5
 inherits: wercker/ubuntu12.04-chef10.18.2@0.0.8
 type : service
 platform : ubuntu@12.04
@@ -18,10 +18,14 @@ env:
   WERCKER_MYSQL_DATABASE_2: werckerdb2
   WERCKER_MYSQL_DATABASE_3: werckerdb3
   WERCKER_MYSQL_DATABASE_4: werckerdb4
+  WERCKER_MYSQL_DATABASE_5: werckerdb5
+  WERCKER_MYSQL_DATABASE_6: werckerdb6
   WERCKER_MYSQL_URL: mysql://wercker:@$$HOST$$:3306/werckerdb1
   WERCKER_MYSQL_URL_2: mysql://wercker:@$$HOST$$:3306/werckerdb2
   WERCKER_MYSQL_URL_3: mysql://wercker:@$$HOST$$:3306/werckerdb3
   WERCKER_MYSQL_URL_4: mysql://wercker:@$$HOST$$:3306/werckerdb4
+  WERCKER_MYSQL_URL_5: mysql://wercker:@$$HOST$$:3306/werckerdb5
+  WERCKER_MYSQL_URL_6: mysql://wercker:@$$HOST$$:3306/werckerdb6
 init-script: |
   sudo stop mysql
   sudo mkdir /tmp/ramdisk
