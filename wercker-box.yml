@@ -1,6 +1,6 @@
 name: mysql-multi-databases
 version: 0.0.5
-inherits: wercker/ubuntu12.04-chef10.18.2@0.0.8
+inherits: woodsae/ubuntu12.04-chef11.4.4@1.2.2
 type : service
 platform : ubuntu@12.04
 description : mysql
